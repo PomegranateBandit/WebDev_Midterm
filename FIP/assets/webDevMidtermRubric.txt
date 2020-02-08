@@ -1,0 +1,20 @@
+Here is the official breakdown for the midterm:
+
+
+5 Valid HTML
+4 Valid CSS
+3 Document Outline (include)
+1 Followed instructions
+           (Folder Structure, naming etc.)
+1 Properly submitted via github
+6 Design
+4 Use of CSS3
+4 CSS3 Animation/Research
+2 Incorporated use of typography
+
+*Please remember to include your document outlines as files
+
+
+https://gsnedders.html5.org/outliner/
+
+http://validator.w3.org/nu/#textarea
