@@ -21,9 +21,7 @@ background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBo
 
 
 .logo {
-  border: solid;
-  border-width: : 1px;
-	border-color: #2a2d30;
+
 	margin: 10px ;
 	width: 130px;
 	height: 130px;
@@ -42,13 +40,11 @@ background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBo
 
     }
 .nav {
-  border: solid;
-  border-width: : 1px;
-	border-color: #2a2d30;
+
   width: 80px;
   height: 30px;
   margin-top: 20px;
-  margin-left: auto;
+
   display: flex;
 
 }
@@ -61,10 +57,6 @@ background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBo
 }
 
       .hero {
-        border: solid;
-        border-width: : 1px;
-      	border-color: #2a2d30;
-      	
       	width: 100%;
       	height: 600px;
 
@@ -128,14 +120,15 @@ background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBo
   padding-right: 20px;
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: center;
   flex-wrap: wrap;
+
 }
 
 #mainContact h2 {
   font-size: 30px;
-  color: #ffffff;
-  background-color: #db5353;
+
+  background-color: #fff5e0;
   margin-bottom: 40px;
   padding: 8px 0px 8px 5px;
   width: 940px;
@@ -188,12 +181,12 @@ input, textarea  {
   height: 30px;
   text-align: center;
   margin-top: 30px;
-  color: #FFF;
+
   padding-left: 10px;
   padding-right: 10px;
   padding-top: 5px;
   padding-bottom: 5px;
-  background-color: #db5353;
+  background-color: #fff5e0;
   font-size: 14px;
   border: 1px solid #003471;
 }
@@ -219,6 +212,7 @@ input, textarea  {
 
 
 .mainFooter {
+  color: white;
   display: flex;
   flex-direction: row;
   justify-content:space-around;
