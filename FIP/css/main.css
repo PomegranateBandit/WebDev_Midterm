@@ -1,7 +1,13 @@
 @charset "utf-8";
-/* CSS Document */
+/* CSS Document
+
+font-family: 'Lemonada', cursive;
+font-family: 'PT Sans', sans-serif;
+
+*/
 
 .background {
+  color: white;
   background-color: #4f2300;
 background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z' fill='%23e5d090' fill-opacity='0.12' fill-rule='evenodd'/%3E%3C/svg%3E");
 }
@@ -9,6 +15,7 @@ background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBo
 
 /* Start Header CSS----------------------------------------------------*/
 .header {
+  font-family: 'PT Sans', sans-serif;
   display: flex;
   justify-content: space-between;
   flex-direction: row;
@@ -17,6 +24,11 @@ background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBo
 
 .hidden {
   display: none;
+}
+
+.selected {
+  padding: 5px 0px 5px 0px;
+  color: #1667b8
 }
 
 
@@ -57,8 +69,11 @@ background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBo
 }
 
       .hero {
-      	width: 100%;
-      	height: 600px;
+
+        object-fit: hero;
+  width: 2098px;
+  height: 600px;
+  align-self: center;
 
       }
 
@@ -81,7 +96,6 @@ background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBo
   flex-wrap: wrap;
   justify-content: space-between;
 }
-
 .saleContain {
   display: flex;
   flex-direction: row;
@@ -89,16 +103,11 @@ background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBo
   width 100%;
   flex-wrap: wrap;
   justify-content: center;
+  padding-bottom: 20px;
 }
-
-.storeSlide {
-  align-self: stretch;
-  border: solid;
-  border-width: : 1px;
-  border-color: #2a2d30;
-  margin: 10px;
-  width:500px;
-  height: 400px;
+.saleContain h2 {
+  padding: 5px;
+  font-family: 'Lemonada', cursive;
 }
 
 .sale {
@@ -110,14 +119,80 @@ background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBo
   height: 250px;
 }
 
+.slideShows {
+  display: flex;
+  flex-direction: row;
+}
+
+.slideContainer {
+
+  width:500px;
+  height: 400px;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+  text-align: center;
+
+
+}
+
+.imageContainer {
+  width: 1500px;
+  height: 400px;
+  position: relative;
+  transition: left 2s;
+  -webkit-transition: left 2s;
+  -moz-transition: left 2s;
+  -o-transition: left 2s;
+}
+
+.slideImage {
+  float: left;
+  margin: 0px;
+  padding: 0px;
+}
+
+.slideButtons {
+  top: -20px;
+  position: relative;
+}
+
+.slideButton {
+  display: inline-block;
+  height: 10px;
+  width: 10px;
+  border-radius: 5px;
+  background-color: #331702;
+}
+
+#slide1:target ~ .imageContainer {
+  left:0px;
+}
+#slide2:target ~ .imageContainer {
+  left:-500;
+}
+#slide3:target ~ .imageContainer {
+  left:-1000;
+}
+#slide4:target ~ .imageContainer {
+  left:0px;
+}
+#slide5:target ~ .imageContainer {
+  left:-500;
+}
+#slide6:target ~ .imageContainer {
+  left:-1000;
+}
+
+
 /*__store end ____________________________________________________*/
 /*__contact start ____________________________________________________*/
 
 #mainContact {
   width: 940px;
   padding-top: 20px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 150px;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -127,7 +202,7 @@ background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBo
 
 #mainContact h2 {
   font-size: 30px;
-
+  color: black;
   background-color: #fff5e0;
   margin-bottom: 40px;
   padding: 8px 0px 8px 5px;
@@ -208,10 +283,29 @@ input, textarea  {
   padding: 0;
 }
 /* contact close______________________________________________________ */
+/* TOS_Start________________________________________________________ */
+
+.ToS {
+  font-family: 'PT Sans', sans-serif;
+  display: flex;
+  font-size: 18;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0px 25px;
+  padding-bottom: 20px;
+
+}
+
+.ToS h2 {
+  font-size: 32;
+}
+
+/* TOS_end________________________________________________________ */
 /* footer________________________________________________________ */
 
 
 .mainFooter {
+  font-family: 'PT Sans', sans-serif;
   color: white;
   display: flex;
   flex-direction: row;
