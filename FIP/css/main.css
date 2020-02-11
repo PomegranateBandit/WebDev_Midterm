@@ -6,6 +6,13 @@ font-family: 'PT Sans', sans-serif;
 
 */
 
+.font {
+  font-family: 'PT Sans', sans-serif;
+}
+.font h2 {
+  font-family: 'Lemonada', cursive;
+}
+
 .background {
   color: white;
   background-color: #4f2300;
@@ -67,16 +74,12 @@ background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBo
 	flex-direction: column;
 	align-items: center;
 }
-
-      .hero {
-
-        object-fit: hero;
-  width: 2098px;
+.hero {
+  object-fit: hero;
+  width: 100%;
   height: 600px;
   align-self: center;
-
-      }
-
+}
       .slide {
           border: solid;
           border-width: : 1px;
@@ -85,6 +88,37 @@ background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBo
         	width: 95%;
         	height: 600px;
       }
+
+.animationArea {
+  width: 100%;
+  height: 250px;
+justify-content: center;
+  padding: 25px;
+}
+
+.animationBox {
+  background: #fff5e0;
+  width: 200px;
+  height: 200px;
+  position: relative;
+  animation-name: firstAni;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+
+}
+
+@keyframes firstAni {
+  0% {background-color: #fff5e0; left: 0px; border-radius: 0 50% 50% 0;}
+
+  50% {background-color: #331702; left: 825px; border-radius: 50%;}
+
+  100% {background-color: #fff5e0; left: 1650px; border-radius: 50% 0 0 50%;}
+}
+
+
+
 /*__Home end ____________________________________________________*/
 /*__store start ____________________________________________________*/
 
@@ -275,7 +309,7 @@ input, textarea  {
 #mapArea h3 {
   font-size: 21px;
   margin-top: 0;
-  color: #2073a8;
+  color: #fff5e0;
 }
 
 #mapArea ul {
@@ -297,6 +331,7 @@ input, textarea  {
 }
 
 .ToS h2 {
+  font-family: 'Lemonada', cursive;
   font-size: 32;
 }
 
